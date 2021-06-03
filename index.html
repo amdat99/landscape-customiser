@@ -1,0 +1,67 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Driveway customiser</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+  <h1 style = "color:#339e47;" >Landscape Customiser</h1>
+
+  <p>Choose a front facing image of your garden or driveway</p>
+  <div>
+    <input  type="file" accept="image/*"  id='userimage' />
+  </div>
+
+ 
+ <div class="container" >
+     <canvas id="canvas"></canvas>
+
+
+<div class="controls">
+    <button type="button" onclick='togglePan()'>Toggle Pan image</button>
+    <button style="margin-left: 5px; margin-top: 5px;" type="button" onclick='toggleDraw()'>Toggle draw</button>
+  
+  <div style="display: flex; flex-direction: column;">
+    <input id="colorPicker" class = 'colorP'  data-jscolor="{}">
+
+
+    <button style="margin-top: 5px; width:100px" type="button" onclick='toggleDriveways()' >Driveways</button>    
+    <button style="margin-top: 5px; width:100px" type="button" onclick='toggleProps()' >Props</button>    
+    <button style="margin-top: 5px; width:50px" type="button" onclick= 'clearCanvas(canvas)'> Clear</button>
+
+    <div  style='display:none' class = 'overlay' id="driveways">
+      <button  style='margin-right: 5px' onclick ='addProps("./assets/block.png")'>block</button>
+      <button  style='margin-right: 5px' onclick ='addProps("./assets/grass.png")'>Artficial Grass</button>
+      <button  style='margin-right: 5px' onclick ='addProps("./assets/ground.png")'>Resin</button>
+      <button  style='margin-right: 5px' onclick ='addProps("./assets/pave.png")'>Pavement</button>
+      <button  style='margin-right: 5px' onclick ='addProps("./assets/yellow.png")'>Tiles</button>
+    </div>
+
+    <div class= 'overlay' style='display:none' id="props">
+     
+      <button  style='margin-right: 5px' onclick ='addProps("https://cdn.pixabay.com/photo/2012/03/03/23/06/wall-21534_960_720.jpg")'>Wall </button>
+      <button  style='margin-right: 5px' onclick ='addProps("https://pngimg.com/uploads/fence/fence_PNG53.png")'>Fence </button> 
+      <button  style='margin-right: 5px' onclick ='addProps("https://pngimg.com/uploads/grass/small/grass_PNG4925.png")'>Grass</button>
+    </div>
+  </div>
+
+</div>  
+
+    </div>
+
+     <p>move unwanted props outside of the canvas</p>
+
+</div>
+<script src="./lib/jscolor.js"></script>
+ <script src="./lib/fabric.min.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>

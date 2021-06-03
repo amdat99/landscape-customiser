@@ -1,0 +1,126 @@
+body {
+    padding: 10px 10px 10px 10px;
+    font-family: "HelveticaNeue";
+    margin:30px;
+ }
+ 
+ canvas {
+    border: 1px solid #bdc3c7;
+    margin: 10px 0px 0px 0px;
+    /*  background-image: url("images/bg.png"); */
+ }
+ button {
+    color: white;
+    height: 25px;
+    font-size: 13px;
+    justify-content: center;
+    align-items: center;
+    background: #339e47;
+    border: none;
+    border-radius: 20px;
+    padding: 6px;
+    box-shadow: 2px 2px 2px 2px hsl(218, 60%, 92%);
+    @media screen and (max-width: 800px) {
+      font-size: 12px;
+    }
+  }
+
+  button:hover {
+    transform: scale(1.1);
+    color: whitesmoke;
+    cursor: pointer;
+    font-weight: bold;
+    border: 2px 2px 2px 2px goldenrod;
+  }
+  
+  input {
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.179);
+    box-shadow: 2px 2px 2px 2px hsl(218, 60%, 92%);
+    border: none;
+    border-radius: 20px;
+    padding: 5px;
+  
+  }
+  html {
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 900;
+    font-size: 16px;
+    color: var(--black);
+    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07);
+  }
+ .myFile {
+    position: relative;
+    overflow: hidden;
+    float: left;
+    clear: left;
+ }
+ 
+ .myFile input[type="file"] {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    font-size: 30px;
+    filter: alpha(opacity=0);
+ }
+ 
+ .myFile2 input[type="file"] {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    font-size: 30px;
+    filter: alpha(opacity=0);
+ }
+ 
+ .container {
+  display: flex;
+  flex-direction:'row';
+
+ }
+
+ .controls{
+     margin-left: 10px;
+
+ }
+
+ .overlay{
+    background: white;
+    box-shadow: 2px 2px 2px 2px hsl(218, 60%, 92%);
+    margin-top: 10px;
+    width:100px;
+    border-radius: 20px;
+    padding: 7px;
+ }
+
+ @media only screen and (max-width: 1180px) {
+    .controls {
+     position: relative;
+     bottom: 130px;
+     background-color: white; ;
+   height: 150PX;
+   border-radius: 20px;
+     font-size: 10px;
+    }
+  }
+ 
+ hr {
+    text-align: left;
+    margin: 30px auto 0 0;
+    width: 700px;
+ }
+ 
+ a:visited {
+    text-decoration: none;
+    color: #000;
+ }
+ 
+ a:active {
+    text-decoration: none;
+    color: #000;
+ }
+
